@@ -1,22 +1,38 @@
 body {
-   background-color: rgb(244, 233, 210);
-   color: rgb(0, 0, 0);
+   background-color: #ffeee7;
    font-family: Arial, Helvetica, sans-serif;
+   margin: -10px;
+}
+main {
+   display: grid;
+   grid-template-areas:
+      "image header header"
+      "ingredients how-to how-to";
+   grid-template-rows: 39vh 71vh;
 }
 header {
-   background-color: rgb(136, 29, 17);
-   color: rgb(244, 233, 210);
-   font-size: xxx-large;
-}
-article {
-   background-color: rgb(202, 75, 32);
-}
-#header-addition {
-   background-color: rgb(136, 29, 17);
-   color: rgb(244, 233, 210);
-}
-footer {
-   background-color: rgb(136, 29, 17);
-   color: rgb(244, 233, 210);
+   grid-area: header;
+   text-align: center;
+   text-indent: 20px;
+   padding: 40px;
    font-size: x-large;
+   background-color: #cc3d0b;
+   color: #ffeee7;
+}
+.right-top {
+   grid-area: image;
+}
+.left {
+   grid-area: ingredients;
+   text-indent: 20px;
+   padding: 25px;
+   background-color: #e3670c;
+   color: #ffeee7;
+}
+.right {
+   grid-area: how-to;
+   text-indent: 20px;
+   padding: 25px;
+   background-color: #fbb448;
+   color: #ffeee7;
 }
